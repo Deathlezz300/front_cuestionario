@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta</title>
+    <link rel="stylesheet" href="../styles/Pregunta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="boxSectionPregunta">
+            <div class="boxTiempo">
+                <h2 class="boxTemporizador" id="campoTemp">Tiempo restante:</h2>
+            </div>
+            <div class="boxDivPregunta" id="boxPregunta">
+                <h2 id="tituloNumPregunta" class="tituloNumPregunta">Pregunta de </h2>
+                <p id="textoPregunta" class="TextoPregunta"></p>
+                <h3 class="tituloOpciones">Opciones</h3>
+                <ul id="listaOpciones" class="boxOpciones">
+                </ul>
+                <span class="errorOpcion" id="textoError">Por favor seleccione una opcion</span>
+                <div class="boxSiguientePregunta">
+                    <button type="button" id="botonNextPregunta" class="botonSiguientePregunta">Siguiente pregunta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../Controllers/PreguntaController.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+
+.boxSectionPregunta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 1rem;
+}
+
+.boxDivPregunta{
+    padding-top: 2rem;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.boxOpciones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    width: 90%;
+}
+
+.TextoPregunta{
+    font-weight: 600;
+    width: 90%;
+    padding: 12px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.tituloOpciones{
+    width: 90%;
+    text-align: left;
+}
+
+.tituloNumPregunta{
+    width: 90%;
+    text-align: left;
+}
+
+li{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.botonOpcion{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    text-align: left;
+    font-size: clamp(.9rem,1vw,1000px);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.botonOpcion:hover{
+    background-color: rgb(43, 172, 204);
+    color: white;
+}
+
+.colorAzulOpcion{
+    background-color: rgb(43, 172, 204);
+    color: white;
+}
+
+.colorBlancoOpcion{
+    background-color: rgb(236, 236, 236);
+    color: black;
+}
+
+.boxSiguientePregunta{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botonSiguientePregunta{
+    padding: 14px;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    font-weight: 600;
+    color: white;
+    font-size: clamp(1rem,1.2vw,1000px);
+    cursor: pointer;
+
+}
+
+.boxInfoPregunta{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxTiempo{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boxTemporizador{
+    text-align: right;
+    color: black;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.errorOpcion{
+    width: 85%;
+    text-align: left;
+    font-weight: 600;
+    color: red;
+    display: none;
+    opacity: 0;
+    transition:  all .2s ease;
+}
+
+.errorOpcion2{
+    display: block;
+    opacity: 1;
+}
+
+@media screen and (max-width:800px){
+    .boxDivPregunta{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .boxDivPregunta{
+        width: 90%;
+    }
+}

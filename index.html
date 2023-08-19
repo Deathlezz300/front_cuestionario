@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section class="boxMainLogin">
+            <form id="formLogin" action="" class="formLogin">
+                <h1 class="tituloLogin" id="tituloLogin">Ingresa tu usuario</h1>
+                <div class='input-group'>
+                    <input class='input-form' id="loginId" type="text" required name='precio' placeholder=' ' />
+                    <label class='label-input'>Nombre</label>
+                </div>
+                <button type="button" id="botonTest" class="buttonTest" href="">Iniciar test</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="Services/LoginService.js"></script>
+    <script type="module" src="Controllers/LoginController.js"></script>
+</body>
+</html>

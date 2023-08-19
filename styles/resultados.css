@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boxSectionResultados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 22px;
+    padding-bottom: 3rem;
+}
+
+.boxDivPregunta{
+    padding-top: 2rem;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.boxOpciones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    width: 90%;
+}
+
+.TextoPregunta{
+    font-weight: 600;
+    width: 90%;
+    padding: 12px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.tituloOpciones{
+    width: 90%;
+    text-align: left;
+}
+
+.tituloNumPregunta{
+    width: 90%;
+    text-align: left;
+}
+
+li{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.botonOpcion{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    text-align: left;
+    font-size: clamp(.9rem,1vw,1000px);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+main{
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+
+.opcionCorrecta{
+    background-color: rgb(4, 175, 4);
+}
+
+.opcionIncorrecta{
+    background-color: red;
+}
+
+@media screen and (max-width:800px){
+    .boxDivPregunta{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .boxDivPregunta{
+        width: 90%;
+    }
+}
