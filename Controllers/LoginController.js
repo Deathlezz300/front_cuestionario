@@ -7,7 +7,7 @@ const startLogin=async(evento)=>{
     
     sessionStorage.setItem('tiempo',JSON.stringify(300))
 
-    if(!localStorage.getItem('userName')){
+    if(!localStorage.getItem('token')){
         const {value}=evento.target
         const data=await GenerateJWT(value);
         localStorage.setItem('token',data.token);
