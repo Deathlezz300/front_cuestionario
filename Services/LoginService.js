@@ -9,7 +9,7 @@ const GenerateJWT=async(nombre)=>{
     });
     const data=await response.json();
     if(data.ok){
-        localStorage.setItem('userName',data.name)
+        localStorage.setItem('userName',nombre)
     }
     return data;
 }
