@@ -17,7 +17,7 @@ const startLogin=async(evento)=>{
         const preguntas=await onGetPreguntas();
         localStorage.setItem('preguntas',JSON.stringify(preguntas));
     }
-    window.location.href='../screens/pregunta.html?id=0';
+    window.location.href='screens/pregunta.html?id=0';
     
 }
 
