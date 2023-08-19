@@ -5,10 +5,11 @@ fetch('https://backend-cuestionario.onrender.com/api/auth/hola').then(res=>res.j
 
 const startLogin=async(evento)=>{
     
+
     sessionStorage.setItem('tiempo',JSON.stringify(300))
 
     if(!localStorage.getItem('token')){
-        const {value}=evento.target
+        const value=document.getElementById("loginId").value;
         const data=await GenerateJWT(value);
         localStorage.setItem('token',data.token);
     }
